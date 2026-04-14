@@ -92,26 +92,9 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Posts grid */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.map((p) => (
-            <article key={p.title} className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
-              <div className={`${p.bg} h-48`} />
-              <div className="p-6 flex flex-col flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-[#ff7162] text-xs font-semibold uppercase tracking-wide">{p.category}</span>
-                  <span className="text-gray-400 text-xs">{p.date}</span>
-                </div>
-                <h2 className="text-lg font-bold text-gray-800 mb-2 leading-snug">{p.title}</h2>
-                <p className="text-gray-600 text-sm flex-1">{p.excerpt}</p>
-                <Link href={p.slug} className="mt-4 text-[#ff7162] text-sm font-semibold hover:underline">
-                  Read More →
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
+      {/* Coming soon */}
+      <section className="py-24 bg-white text-center">
+        <p className="text-gray-400 text-lg">Blog posts coming soon. Stay tuned!</p>
       </section>
 
       <Footer />

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Image from "next/image";
 import Link from "next/link";
 
 const programs = [
@@ -8,7 +9,7 @@ const programs = [
     name: "Infant Program",
     desc: "A gentle, nurturing environment designed for the youngest learners. Caregivers build secure attachments through responsive care, sensory play, and soft introduction to both English and Mandarin through songs and stories.",
     highlights: ["1:3 caregiver-to-infant ratio", "Sensory exploration stations", "Daily Mandarin songs & stories", "Parent daily reports"],
-    bg: "bg-[#dceeff]",
+    img: "/images/bba_infant.jpg",
     price: "Contact for pricing",
   },
   {
@@ -16,7 +17,7 @@ const programs = [
     name: "Waddle Program",
     desc: "As babies begin to discover their mobility, our Waddle program supports every crawl and first step. Play-based activities introduce world cultures through music, movement, and tactile exploration.",
     highlights: ["Low-to-the-ground safe environment", "Gross motor skill development", "Bilingual storytime daily", "Music & movement sessions"],
-    bg: "bg-[#fde8e5]",
+    img: "/images/bba_waddler.jpg",
     price: "Contact for pricing",
   },
   {
@@ -24,16 +25,16 @@ const programs = [
     name: "Toddler Program",
     desc: "Our toddler curriculum is packed with variety — art, sensory bins, outdoor play, and language-rich activities — all carefully designed to build independence and prepare children for preschool.",
     highlights: ["Language-rich classroom", "Art & sensory activities daily", "Outdoor exploration time", "Social-emotional skill building"],
-    bg: "bg-[#dceeff]",
+    img: "/images/bba_toddler.jpg",
     price: "Contact for pricing",
   },
   {
-    age: "2 – 4 years · 12 seats",
-    name: "Music Lessons",
-    desc: "An engaging music curriculum for young children that develops rhythm, pitch awareness, creativity, and expression. Children explore instruments, movement, and collaborative musical play.",
-    highlights: ["Orff-inspired methodology", "Instruments for every child", "Performance opportunities", "Small class of 12 students"],
-    bg: "bg-[#fde8e5]",
-    price: "$480 / month",
+    age: "2 – 4 years",
+    name: "Preschool",
+    desc: "An engaging curriculum for young children that develops rhythm, pitch awareness, creativity, and expression. Children explore instruments, movement, and collaborative musical play.",
+    highlights: ["Orff-inspired methodology", "Instruments for every child", "Performance opportunities"],
+    img: "/images/bba_pschool.jpg",
+    price: "Contact for pricing",
   },
 ];
 
@@ -65,7 +66,9 @@ export default function ProgramsPage() {
               key={p.name}
               className={`grid md:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""}`}
             >
-              <div className={`${p.bg} rounded-2xl aspect-[4/3]`} />
+              <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+                <Image src={p.img} alt={p.name} fill className="object-cover" />
+              </div>
               <div>
                 <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">{p.age}</span>
                 <h2 className="text-2xl md:text-3xl font-bold mt-1 mb-4 text-gray-800">{p.name}</h2>
@@ -77,12 +80,9 @@ export default function ProgramsPage() {
                     </li>
                   ))}
                 </ul>
-                <div className="flex items-center gap-4">
-                  <span className="text-[#ff7162] font-bold">{p.price}</span>
-                  <Link href="/contact" className="bg-[#4A90D9] text-white px-6 py-2 rounded-full text-sm hover:bg-[#2d6fa8] transition-colors">
-                    Inquire Now
-                  </Link>
-                </div>
+                <Link href="/contact" className="bg-[#4A90D9] text-white px-6 py-2 rounded-full text-sm hover:bg-[#2d6fa8] transition-colors">
+                  Inquire Now
+                </Link>
               </div>
             </div>
           ))}

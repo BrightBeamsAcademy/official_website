@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { CONTACT } from "../config";
 
 const testimonials = [
   { name: "Hattie Bradly", role: "Kids' Father", text: "Bright Beams Academy has been a wonderful experience for our family. Our child loves going every day and has grown so much in confidence and language skills." },
@@ -23,6 +24,16 @@ export default function TestimonialFAQ() {
         <div>
           <h1 className="text-3xl font-bold text-gray-800 mb-8">Happy Parents Say</h1>
           <div className="space-y-6">
+            {CONTACT.googleReviews && (
+              <a
+                href={CONTACT.googleReviews}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#4A90D9] hover:underline mb-2"
+              >
+                ★ Read more reviews on Google →
+              </a>
+            )}
             {testimonials.map((t) => (
               <div key={t.name} className="bg-[#fff8f7] rounded-2xl p-6 border border-[#f4edd0]">
                 <p className="text-gray-600 italic mb-4">&ldquo;{t.text}&rdquo;</p>

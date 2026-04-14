@@ -5,4 +5,5 @@ export const CONTACT = {
   address: "8693 161st Ave NE, Redmond, WA 98052",
   mapsEmbed: "https://maps.google.com/maps?q=8693+161st+Ave+NE,+Redmond,+WA+98052&output=embed",
   hours: "Mon – Fri: 7:00 AM – 6:00 PM",
+  googleReviews: "", // TODO: paste Google Reviews URL here
 };

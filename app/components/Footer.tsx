@@ -12,13 +12,6 @@ export default function Footer() {
             Bright Beams Academy is a premier bilingual kindergarten located in Redmond, Washington,
             dedicated to nurturing the growth and development of children aged 0 to 5 years.
           </p>
-          <div className="flex gap-3">
-            {["f", "𝕏", "📷", "▶"].map((icon) => (
-              <a key={icon} href="#" className="w-8 h-8 bg-[#ff7162] text-white rounded-full flex items-center justify-center text-xs hover:bg-[#e55a4a] transition-colors">
-                {icon}
-              </a>
-            ))}
-          </div>
         </div>
 
         {/* Links */}
