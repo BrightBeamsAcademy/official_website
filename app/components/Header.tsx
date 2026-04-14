@@ -16,11 +16,11 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#F4EDD0] shadow-sm sticky top-0 z-50 overflow-visible">
-      <div className="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between overflow-visible">
+    <header className="bg-[#F4EDD0] shadow-sm sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo.png" alt="Bright Beams Academy" width={210} height={70} className="h-56 w-auto" />
+          <Image src="/logo.png" alt="Bright Beams Academy" width={307} height={96} className="h-20 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
