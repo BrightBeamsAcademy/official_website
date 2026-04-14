@@ -25,7 +25,6 @@ export default function Classes() {
                 <div className="text-xs text-[#ff7162] font-semibold uppercase tracking-wide mb-1">{c.age}</div>
                 <h3 className="text-lg font-bold text-gray-800 mb-2">{c.name}</h3>
                 <p className="text-gray-600 text-sm flex-1">{c.desc}</p>
-                {c.price && <div className="text-[#ff7162] font-bold mt-3">{c.price}</div>}
                 <Link href={c.href} className="mt-4 bg-[#4A90D9] text-white text-center py-2 rounded-full text-sm hover:bg-[#2d6fa8] transition-colors">
                   Read More
                 </Link>
