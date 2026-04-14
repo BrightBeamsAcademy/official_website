@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const slides = [
   { bg: "bg-transparent" },
@@ -17,11 +18,16 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[560px] flex items-center bg-white">
+    <section className="relative min-h-[560px] flex items-center bg-white overflow-hidden">
+      {/* Logo background */}
+      <div className="absolute right-16 top-8 w-96 h-32 pointer-events-none select-none">
+        <Image src="/logo.png" alt="" fill className="object-contain opacity-10" />
+      </div>
+
       {/* Left arrow */}
       <button
         onClick={() => setCurrent((c) => (c - 1 + slides.length) % slides.length)}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white shadow text-[#ff7162] flex items-center justify-center text-xl hover:bg-[#ff7162] hover:text-white transition-colors"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white shadow text-[#4A90D9] flex items-center justify-center text-xl hover:bg-[#4A90D9] hover:text-white transition-colors"
       >
         ‹
       </button>
@@ -38,7 +44,7 @@ export default function Hero() {
         </p>
         <Link
           href="/contact"
-          className="bg-[#ff7162] text-white px-8 py-3 rounded-full hover:bg-[#e55a4a] transition-colors font-medium"
+          className="bg-[#4A90D9] text-white px-8 py-3 rounded-full hover:bg-[#2d6fa8] transition-colors font-medium"
         >
           Contact us
         </Link>
@@ -47,7 +53,7 @@ export default function Hero() {
       {/* Right arrow */}
       <button
         onClick={() => setCurrent((c) => (c + 1) % slides.length)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white shadow text-[#ff7162] flex items-center justify-center text-xl hover:bg-[#ff7162] hover:text-white transition-colors"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white shadow text-[#4A90D9] flex items-center justify-center text-xl hover:bg-[#4A90D9] hover:text-white transition-colors"
       >
         ›
       </button>
@@ -58,7 +64,7 @@ export default function Hero() {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full transition-colors ${i === current ? "bg-[#ff7162]" : "bg-white"}`}
+            className={`w-3 h-3 rounded-full transition-colors ${i === current ? "bg-[#4A90D9]" : "bg-white"}`}
           />
         ))}
       </div>

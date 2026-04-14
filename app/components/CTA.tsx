@@ -8,7 +8,7 @@ export default function CTA() {
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">Bright Beams is accepting new students!</h1>
         <Link
           href="/contact"
-          className="bg-[#ff7162] text-white px-10 py-3 rounded-full font-bold hover:bg-[#e55a4a] transition-colors text-lg"
+          className="bg-[#4A90D9] text-white px-10 py-3 rounded-full font-bold hover:bg-[#2d6fa8] transition-colors text-lg"
         >
           Enroll Now
         </Link>

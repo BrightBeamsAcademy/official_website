@@ -1,10 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section className="py-20 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-        <div className="rounded-2xl overflow-hidden bg-[#dceeff] aspect-[4/3]" />
+        <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+          <Image src="/images/bba_welcome.jpg" alt="Welcome to Bright Beams Academy" fill className="object-cover" />
+        </div>
         <div>
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">About Us</span>
           <h1 className="text-3xl md:text-4xl font-bold mt-2 mb-5 text-gray-800">Welcome to Bright Beams Academy</h1>
@@ -25,7 +28,7 @@ export default function About() {
           </p>
           <Link
             href="/contact"
-            className="bg-[#ff7162] text-white px-8 py-3 rounded-full hover:bg-[#e55a4a] transition-colors font-medium"
+            className="bg-[#4A90D9] text-white px-8 py-3 rounded-full hover:bg-[#2d6fa8] transition-colors font-medium"
           >
             Contact us
           </Link>

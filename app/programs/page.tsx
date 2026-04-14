@@ -43,7 +43,10 @@ export default function ProgramsPage() {
       <Header />
 
       {/* Hero banner */}
-      <section className="bg-[#F4EDD0] py-20">
+      <section className="relative bg-white py-20 overflow-hidden">
+      <div className="absolute top-0 right-0 pointer-events-none select-none">
+        <img src="/logo.png" alt="" className="w-96 opacity-5" />
+      </div>
         <div className="max-w-6xl mx-auto px-4 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Programs</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Education for Your Children</h1>
@@ -76,7 +79,7 @@ export default function ProgramsPage() {
                 </ul>
                 <div className="flex items-center gap-4">
                   <span className="text-[#ff7162] font-bold">{p.price}</span>
-                  <Link href="/contact" className="border border-[#ff7162] text-[#ff7162] px-6 py-2 rounded-full text-sm hover:bg-[#ff7162] hover:text-white transition-colors">
+                  <Link href="/contact" className="bg-[#4A90D9] text-white px-6 py-2 rounded-full text-sm hover:bg-[#2d6fa8] transition-colors">
                     Inquire Now
                   </Link>
                 </div>
@@ -87,10 +90,10 @@ export default function ProgramsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#ff7162] text-white text-center">
+      <section className="py-16 bg-[#4A90D9] text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Schedule a Tour</h2>
         <p className="mb-8 text-white/90">Come see our classrooms and meet our teachers in person.</p>
-        <Link href="/contact" className="bg-white text-[#ff7162] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+        <Link href="/contact" className="bg-white text-[#4A90D9] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
           Contact Us
         </Link>
       </section>

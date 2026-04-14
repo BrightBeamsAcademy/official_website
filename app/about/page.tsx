@@ -22,21 +22,27 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero banner */}
-      <section className="bg-[#F4EDD0] py-20">
-        <div className="max-w-6xl mx-auto px-4 text-center">
+      <section className="relative bg-white py-20 overflow-hidden">
+      <div className="absolute top-0 right-0 pointer-events-none select-none">
+        <img src="/logo.png" alt="" className="w-96 opacity-5" />
+      </div>
+        <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">About Us</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Our Story & Mission</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            We are a premier bilingual kindergarten in Redmond, WA, dedicated to giving children
-            aged 0–5 the strongest possible start through joyful, culturally rich early education.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-8 text-gray-800">Our Story & Mission</h1>
+          <div className="text-gray-600 text-lg space-y-5 text-left">
+            <p>Bright Beams Academy is a premier bilingual kindergarten located in Redmond, Washington, dedicated to nurturing the growth and development of children aged 0 to 5 years. In a region characterized by the increasing number of dual-income families in Redmond, Bellevue, and Kirkland, the need for high-quality early education is more essential than ever. Bright Beams Academy offers an immersive learning environment that combines bilingual education, creative activities, and early cognitive development to give children the strongest possible start to their educational journey.</p>
+            <p>Our curriculum integrates both Chinese and English, allowing children to develop linguistic abilities at a young age while fostering cognitive flexibility and cultural appreciation. At Bright Beams, education goes beyond academics, focusing on emotional well-being, creative thinking, and social skills. We aim to create a joyful and enriching environment where children not only learn but thrive holistically.</p>
+            <p>Designed with both children and parents in mind, Bright Beams Academy operates with flexibility, offering weekend and after-school programs to support the diverse needs of working families. Through personalized learning in small class sizes, experienced educators, and a safe, engaging environment, we ensure every child receives the attention, care, and inspiration they need to succeed.</p>
+          </div>
         </div>
       </section>
 
       {/* Story */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-          <div className="rounded-2xl overflow-hidden bg-[#dceeff] aspect-[4/3]" />
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+            <img src="/images/bba_welcome.jpg" alt="Welcome to Bright Beams Academy" className="w-full h-full object-cover" />
+          </div>
           <div>
             <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Who We Are</span>
             <h2 className="text-3xl font-bold mt-2 mb-5 text-gray-800">Welcome to Bright Beams Academy</h2>
@@ -99,10 +105,10 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#ff7162] text-white text-center">
+      <section className="py-16 bg-[#4A90D9] text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
         <p className="mb-8 text-white/90">Schedule a tour and see Bright Beams Academy in person.</p>
-        <Link href="/contact" className="bg-white text-[#ff7162] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+        <Link href="/contact" className="bg-white text-[#4A90D9] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
           Contact Us
         </Link>
       </section>

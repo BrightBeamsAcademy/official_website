@@ -1,15 +1,14 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Services from "./components/Services";
 import Classes from "./components/Classes";
 import Facility from "./components/Facility";
-import Teachers from "./components/Teachers";
-import Events from "./components/Events";
+// import Teachers from "./components/Teachers";
+// import Events from "./components/Events";
 import TestimonialFAQ from "./components/TestimonialFAQ";
 import CTA from "./components/CTA";
 import Gallery from "./components/Gallery";
-import News from "./components/News";
+// import News from "./components/News";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -18,15 +17,14 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Services />
       <Classes />
       <Facility />
-      <Teachers />
-      <Events />
+      {/* <Teachers /> */}
+      {/* <Events /> */}
       <TestimonialFAQ />
       <CTA />
       <Gallery />
-      <News />
+      {/* <News /> */}
       <Footer />
     </main>
   );

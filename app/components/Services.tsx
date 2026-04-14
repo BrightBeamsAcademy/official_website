@@ -12,10 +12,10 @@ export default function Services() {
         <div className="md:w-2/5">
           <h1 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">Best Services for Kids</h1>
           <div className="flex gap-3">
-            <button className="w-10 h-10 rounded-full border-2 border-[#ff7162] text-[#ff7162] flex items-center justify-center text-xl hover:bg-[#ff7162] hover:text-white transition-colors">
+            <button className="w-10 h-10 rounded-full bg-[#4A90D9] text-white flex items-center justify-center text-xl hover:bg-[#2d6fa8] transition-colors">
               ‹
             </button>
-            <button className="w-10 h-10 rounded-full bg-[#ff7162] text-white flex items-center justify-center text-xl hover:bg-[#e55a4a] transition-colors">
+            <button className="w-10 h-10 rounded-full bg-[#4A90D9] text-white flex items-center justify-center text-xl hover:bg-[#2d6fa8] transition-colors">
               ›
             </button>
           </div>

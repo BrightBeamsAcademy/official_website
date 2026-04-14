@@ -61,7 +61,10 @@ export default function BlogPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-[#F4EDD0] py-20">
+      <section className="relative bg-white py-20 overflow-hidden">
+      <div className="absolute top-0 right-0 pointer-events-none select-none">
+        <img src="/logo.png" alt="" className="w-96 opacity-5" />
+      </div>
         <div className="max-w-6xl mx-auto px-4 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Blog</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">News & Insights</h1>

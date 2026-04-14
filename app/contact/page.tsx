@@ -25,7 +25,10 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-[#F4EDD0] py-20">
+      <section className="relative bg-white py-20 overflow-hidden">
+      <div className="absolute top-0 right-0 pointer-events-none select-none">
+        <img src="/logo.png" alt="" className="w-96 opacity-5" />
+      </div>
         <div className="max-w-6xl mx-auto px-4 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Contact</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Get in Touch</h1>
@@ -136,7 +139,7 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="bg-[#ff7162] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e55a4a] transition-colors self-start"
+                  className="bg-[#4A90D9] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#2d6fa8] transition-colors self-start"
                 >
                   Send Message
                 </button>
