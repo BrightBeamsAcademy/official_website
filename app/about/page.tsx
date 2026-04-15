@@ -38,7 +38,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
             <img src="/images/bba_welcome.jpg" alt="Welcome to Bright Beams Academy" className="w-full h-full object-cover" />
@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-12">
             <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Our Team</span>

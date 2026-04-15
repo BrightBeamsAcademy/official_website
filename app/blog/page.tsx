@@ -93,7 +93,7 @@ export default function BlogPage() {
       </section>
 
       {/* Coming soon */}
-      <section className="py-24 bg-white text-center">
+      <section className="py-24 bg-gray-100 text-center">
         <p className="text-gray-400 text-lg">Blog posts coming soon. Stay tuned!</p>
       </section>
 

@@ -59,7 +59,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* Program cards */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-8 flex flex-col gap-16">
           {programs.map((p, i) => (
             <div

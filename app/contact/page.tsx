@@ -39,7 +39,7 @@ export default function ContactPage() {
       </section>
 
       {/* Content */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16">
 
           {/* Info */}
