@@ -23,7 +23,7 @@ export default function Home() {
       {/* <Events /> */}
       {/* <TestimonialFAQ /> */}
       <CTA />
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <News /> */}
       <Footer />
     </main>
