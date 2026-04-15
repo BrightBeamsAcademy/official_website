@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Home - BRIGHT BEAMS ACADEMY",
+  title: "Bright Beams Academy",
   description: "Bright Beams Academy is a premier bilingual kindergarten located in Redmond, Washington, dedicated to nurturing the growth and development of children aged 0 to 5 years.",
 };
 
