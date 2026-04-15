@@ -65,7 +65,7 @@ export default function BlogPage() {
       <div className="absolute top-0 right-0 pointer-events-none select-none">
         <img src="/logo.png" alt="" className="w-96 opacity-5" />
       </div>
-        <div className="max-w-6xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Blog</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">News & Insights</h1>
           <p className="text-gray-600 max-w-xl mx-auto text-lg">
@@ -76,7 +76,7 @@ export default function BlogPage() {
 
       {/* Category filter (static display) */}
       <section className="border-b border-gray-200 bg-white">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex gap-4 flex-wrap">
+        <div className="max-w-7xl mx-auto px-8 py-4 flex gap-4 flex-wrap">
           {categories.map((c, i) => (
             <button
               key={c}

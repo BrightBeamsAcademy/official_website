@@ -26,7 +26,7 @@ export default function AboutPage() {
       <div className="absolute top-0 right-0 pointer-events-none select-none">
         <img src="/logo.png" alt="" className="w-96 opacity-5" />
       </div>
-        <div className="max-w-4xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">About Us</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-8 text-gray-800">Our Story & Mission</h1>
           <div className="text-gray-600 text-lg space-y-5 text-left">
@@ -39,7 +39,7 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
             <img src="/images/bba_welcome.jpg" alt="Welcome to Bright Beams Academy" className="w-full h-full object-cover" />
           </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
       {/* Values */}
       <section className="py-20 bg-gray-100">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-12">
             <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Our Values</span>
             <h2 className="text-3xl font-bold mt-2 text-gray-800">What We Stand For</h2>
@@ -87,7 +87,7 @@ export default function AboutPage() {
 
       {/* Team */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-12">
             <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Our Team</span>
             <h2 className="text-3xl font-bold mt-2 text-gray-800">Meet the Educators</h2>

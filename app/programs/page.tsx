@@ -48,7 +48,7 @@ export default function ProgramsPage() {
       <div className="absolute top-0 right-0 pointer-events-none select-none">
         <img src="/logo.png" alt="" className="w-96 opacity-5" />
       </div>
-        <div className="max-w-6xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Programs</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Education for Your Children</h1>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -60,7 +60,7 @@ export default function ProgramsPage() {
 
       {/* Program cards */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 flex flex-col gap-16">
+        <div className="max-w-7xl mx-auto px-8 flex flex-col gap-16">
           {programs.map((p, i) => (
             <div
               key={p.name}

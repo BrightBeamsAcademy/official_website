@@ -19,7 +19,7 @@ export default function TestimonialFAQ() {
 
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16">
         {/* Testimonials */}
         <div>
           <h1 className="text-3xl font-bold text-gray-800 mb-8">Happy Parents Say</h1>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section className="py-20 bg-gray-100">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
         <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
           <Image src="/images/bba_welcome.jpg" alt="Welcome to Bright Beams Academy" fill className="object-cover" />
         </div>

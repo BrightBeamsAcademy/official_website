@@ -4,7 +4,7 @@ import { CONTACT } from "../config";
 export default function Footer() {
   return (
     <footer className="bg-[#F4EDD0] text-gray-600 pt-16 pb-6">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-10 mb-10">
+      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-10 mb-10">
         {/* About */}
         <div>
           <h4 className="text-gray-800 font-bold text-lg mb-4">Bright Beams Academy</h4>

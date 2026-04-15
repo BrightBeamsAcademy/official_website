@@ -24,15 +24,7 @@ export default function Hero() {
         <Image src="/logo.png" alt="" fill className="object-contain opacity-10" />
       </div>
 
-      {/* Left arrow */}
-      <button
-        onClick={() => setCurrent((c) => (c - 1 + slides.length) % slides.length)}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white shadow text-[#4A90D9] flex items-center justify-center text-xl hover:bg-[#4A90D9] hover:text-white transition-colors"
-      >
-        ‹
-      </button>
-
-      <div className="max-w-6xl mx-auto px-4 py-20 md:w-1/2">
+      <div className="max-w-7xl mx-auto px-8 py-20 md:w-1/2">
         <h3 className="text-[#ff7162] font-semibold uppercase tracking-widest mb-3">Best Choice</h3>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-5">
           Make Your Children&apos;s<br />Life Special
@@ -49,14 +41,6 @@ export default function Hero() {
           Contact us
         </Link>
       </div>
-
-      {/* Right arrow */}
-      <button
-        onClick={() => setCurrent((c) => (c + 1) % slides.length)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white shadow text-[#4A90D9] flex items-center justify-center text-xl hover:bg-[#4A90D9] hover:text-white transition-colors"
-      >
-        ›
-      </button>
 
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">

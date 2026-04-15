@@ -21,7 +21,7 @@ export default function Home() {
       <Facility />
       {/* <Teachers /> */}
       {/* <Events /> */}
-      <TestimonialFAQ />
+      {/* <TestimonialFAQ /> */}
       <CTA />
       <Gallery />
       {/* <News /> */}

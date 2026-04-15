@@ -29,7 +29,7 @@ export default function ContactPage() {
       <div className="absolute top-0 right-0 pointer-events-none select-none">
         <img src="/logo.png" alt="" className="w-96 opacity-5" />
       </div>
-        <div className="max-w-6xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Contact</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Get in Touch</h1>
           <p className="text-gray-600 max-w-xl mx-auto text-lg">
@@ -40,7 +40,7 @@ export default function ContactPage() {
 
       {/* Content */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+        <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16">
 
           {/* Info */}
           <div>
