@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AdminLoginPage() {
   const [password, setPassword] = useState("");
@@ -30,7 +31,9 @@ export default function AdminLoginPage() {
     <main className="min-h-screen bg-[#F4EDD0] flex items-center justify-center">
       <div className="bg-white rounded-2xl p-10 shadow-sm w-full max-w-sm">
         <div className="flex justify-center mb-6">
-          <Image src="/logo.png" alt="Bright Beams Academy" width={180} height={56} className="w-auto h-14" />
+          <Link href="/">
+            <Image src="/logo.png" alt="Bright Beams Academy" width={180} height={56} className="w-auto h-14" />
+          </Link>
         </div>
         <h1 className="text-xl font-bold text-gray-800 mb-1 text-center">Admin Portal</h1>
         <p className="text-gray-400 text-sm mb-6 text-center">Bright Beams Academy</p>
