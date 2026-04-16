@@ -14,10 +14,36 @@ const info = [
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = {
+      firstName: (form.elements.namedItem("firstName") as HTMLInputElement).value,
+      lastName: (form.elements.namedItem("lastName") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    setLoading(false);
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      setError("Something went wrong. Please try again or email us directly.");
+    }
   }
 
   return (
@@ -90,39 +116,24 @@ export default function ContactPage() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1">
                     <label className="text-sm font-medium text-gray-700">First Name</label>
-                    <input
-                      type="text"
-                      required
-                      className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]"
-                    />
+                    <input name="firstName" type="text" required className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]" />
                   </div>
                   <div className="flex flex-col gap-1">
                     <label className="text-sm font-medium text-gray-700">Last Name</label>
-                    <input
-                      type="text"
-                      required
-                      className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]"
-                    />
+                    <input name="lastName" type="text" required className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-sm font-medium text-gray-700">Email</label>
-                  <input
-                    type="email"
-                    required
-                    className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]"
-                  />
+                  <input name="email" type="email" required className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-sm font-medium text-gray-700">Phone (optional)</label>
-                  <input
-                    type="tel"
-                    className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]"
-                  />
+                  <input name="phone" type="tel" className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-sm font-medium text-gray-700">Subject</label>
-                  <select className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]">
+                  <select name="subject" className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162]">
                     <option>Schedule a Tour</option>
                     <option>Enrollment Inquiry</option>
                     <option>Program Information</option>
@@ -131,17 +142,15 @@ export default function ContactPage() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <label className="text-sm font-medium text-gray-700">Message</label>
-                  <textarea
-                    required
-                    rows={5}
-                    className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162] resize-none"
-                  />
+                  <textarea name="message" required rows={5} className="border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:border-[#ff7162] resize-none" />
                 </div>
+                {error && <p className="text-red-500 text-sm">{error}</p>}
                 <button
                   type="submit"
-                  className="bg-[#4A90D9] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#2d6fa8] transition-colors self-start"
+                  disabled={loading}
+                  className="bg-[#4A90D9] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#2d6fa8] transition-colors self-start disabled:opacity-60"
                 >
-                  Send Message
+                  {loading ? "Sending…" : "Send Message"}
                 </button>
               </form>
             )}
