@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Programs", href: "/programs" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
+  { label: "Admin", href: "/admin" },
 ];
 
 export default function Header() {
