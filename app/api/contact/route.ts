@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
   }
 
   const { error } = await resend.emails.send({
-    from: "Bright Beams Website <noreply@brightbeams-academy.com>",
+    from: "Bright Beams Website <onboarding@resend.dev>",
     to: "info@brightbeams-academy.com",
     replyTo: email,
     subject: `[Contact Form] ${subject} — ${firstName} ${lastName}`,
