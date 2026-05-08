@@ -81,6 +81,7 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-8 py-2 text-center">
           🌟 Open House every Sunday 10am – 12pm for the Month of May
+          <span className="ml-2 underline underline-offset-2">View flyer ↗</span>
         </div>
       </a>
     </header>
