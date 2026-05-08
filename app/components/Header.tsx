@@ -73,11 +73,16 @@ export default function Header() {
       )}
 
       {/* Notification banner */}
-      <div className="bg-[#ff7162] text-white text-sm md:text-base">
+      <a
+        href="/BBA%20Flyer%20-%20OPEN%20HOUSE.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-[#ff7162] text-white text-sm md:text-base hover:opacity-90 transition-opacity"
+      >
         <div className="max-w-7xl mx-auto px-8 py-2 text-center">
           🌟 Open House every Sunday 10am – 12pm for the Month of May
         </div>
-      </div>
+      </a>
     </header>
   );
 }
