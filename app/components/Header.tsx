@@ -71,6 +71,13 @@ export default function Header() {
           </div>
         </div>
       )}
+
+      {/* Notification banner */}
+      <div className="bg-[#ff7162] text-white text-sm md:text-base">
+        <div className="max-w-7xl mx-auto px-8 py-2 text-center">
+          🌟 Open House every Sunday 10am – 12pm for the Month of May
+        </div>
+      </div>
     </header>
   );
 }
