@@ -71,6 +71,16 @@ export default function Header() {
           </div>
         </div>
       )}
+
+      {/* Notification banner */}
+      <div className="bg-[#ff7162] text-white text-sm md:text-base">
+        <div className="max-w-7xl mx-auto px-8 py-2 text-center">
+          🌟 Now enrolling for Fall 2026 —{" "}
+          <Link href="/contact" className="underline font-medium hover:opacity-80">
+            schedule a tour today
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }
