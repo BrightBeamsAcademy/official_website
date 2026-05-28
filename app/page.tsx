@@ -22,8 +22,8 @@ export default function Home() {
       {/* <Teachers /> */}
       {/* <Events /> */}
       {/* <TestimonialFAQ /> */}
+      <Gallery />
       <CTA />
-      {/* <Gallery /> */}
       {/* <News /> */}
       <Footer />
     </main>
