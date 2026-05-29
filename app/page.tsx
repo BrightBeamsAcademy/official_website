@@ -18,11 +18,11 @@ export default function Home() {
       <Hero />
       <About />
       <Classes />
+      <Gallery />
       <Facility />
       {/* <Teachers /> */}
       {/* <Events /> */}
       {/* <TestimonialFAQ /> */}
-      <Gallery />
       <CTA />
       {/* <News /> */}
       <Footer />
