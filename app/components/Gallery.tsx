@@ -14,7 +14,7 @@ type GalleryItem = {
 const galleryItems: GalleryItem[] = [
   {
     id: "infant",
-    img: "/images/bba_infant.jpg",
+    img: "/daycare_photos/126.JPG",
     title: "Our Infant Classroom (6 weeks – 8 months)",
     description:
       "Our infant classroom is calm and nurturing, giving the youngest learners a safe space to bond, explore, and rest. Daily activities support early motor development, sensory discovery, emotional attachment, and the beginnings of language. We use the Experience Curriculum, enriched with songs, gentle movement, bilingual language immersion, sensory play, and one-on-one caregiver interaction.",
@@ -22,7 +22,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "waddle",
-    img: "/images/bba_waddler.jpg",
+    img: "/daycare_photos/148.PNG",
     title: "Our Waddle Classroom (9 – 13 months)",
     description:
       "Our waddle classroom is warm and active, giving newly mobile little ones plenty of room to crawl, cruise, and take their first steps. Daily activities support gross motor development, early communication, social bonding, and curiosity-led exploration. We use the Experience Curriculum, enriched with music, movement, bilingual language immersion, picture books, and hands-on sensory play.",
