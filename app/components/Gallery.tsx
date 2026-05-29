@@ -39,7 +39,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: "early-preschool",
     img: "/daycare_photos/125.JPG",
-    title: "Our Pre-K Classroom (2 – 4 years)",
+    title: "Our Early Preschool Classroom (2 – 4 years)",
     description:
       "Our early preschool classroom is structured yet playful, helping growing learners build the confidence and skills they will carry into kindergarten. Daily activities support emerging language, social cooperation, self-care routines, and creative exploration. We use the Experience Curriculum, enriched with music, movement, bilingual language immersion, literacy concepts, and kindergarten readiness preparation.",
     href: "/programs/early-preschool",
