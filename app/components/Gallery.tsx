@@ -17,7 +17,7 @@ const galleryItems: GalleryItem[] = [
     img: "/images/bba_infant.jpg",
     title: "Our Infant Classroom (6 weeks – 8 months)",
     description:
-      "English & Mandarin immersion setting and kindergarten readiness preparation through our play-based curriculum that introduces world cultures and traditions through daily explorations.",
+      "Our infant classroom is calm and nurturing, giving the youngest learners a safe space to bond, explore, and rest. Daily activities support early motor development, sensory discovery, emotional attachment, and the beginnings of language. We use the Experience Curriculum, enriched with songs, gentle movement, bilingual language immersion, sensory play, and one-on-one caregiver interaction.",
     href: "/programs/infant",
   },
   {
@@ -25,7 +25,7 @@ const galleryItems: GalleryItem[] = [
     img: "/images/bba_waddler.jpg",
     title: "Our Waddle Classroom (9 – 13 months)",
     description:
-      "English & Mandarin immersion setting and kindergarten readiness preparation through our play-based curriculum that introduces world cultures and traditions through daily explorations.",
+      "Our waddle classroom is warm and active, giving newly mobile little ones plenty of room to crawl, cruise, and take their first steps. Daily activities support gross motor development, early communication, social bonding, and curiosity-led exploration. We use the Experience Curriculum, enriched with music, movement, bilingual language immersion, picture books, and hands-on sensory play.",
     href: "/programs/waddle",
   },
   {
@@ -41,7 +41,7 @@ const galleryItems: GalleryItem[] = [
     img: "/images/bba_pschool.jpg",
     title: "Our Early Preschool Classroom (2 – 4 years)",
     description:
-      "The preschool program at Bright Beams Academy is focused on preparing your child for kindergarten through emerging language, social, and self-care skills in a structured yet playful setting.",
+      "Our early preschool classroom is structured yet playful, helping growing learners build the confidence and skills they will carry into kindergarten. Daily activities support emerging language, social cooperation, self-care routines, and creative exploration. We use the Experience Curriculum, enriched with music, movement, bilingual language immersion, literacy concepts, and kindergarten readiness preparation.",
     href: "/programs/early-preschool",
   },
 ];
