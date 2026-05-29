@@ -2,7 +2,49 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { programs } from "../programs/data";
+
+type GalleryItem = {
+  id: string;
+  img: string;
+  title: string;
+  description: string;
+  href?: string;
+};
+
+const galleryItems: GalleryItem[] = [
+  {
+    id: "infant",
+    img: "/images/bba_infant.jpg",
+    title: "Our Infant Classroom (6 weeks – 8 months)",
+    description:
+      "English & Mandarin immersion setting and kindergarten readiness preparation through our play-based curriculum that introduces world cultures and traditions through daily explorations.",
+    href: "/programs/infant",
+  },
+  {
+    id: "waddle",
+    img: "/images/bba_waddler.jpg",
+    title: "Our Waddle Classroom (9 – 13 months)",
+    description:
+      "English & Mandarin immersion setting and kindergarten readiness preparation through our play-based curriculum that introduces world cultures and traditions through daily explorations.",
+    href: "/programs/waddle",
+  },
+  {
+    id: "toddler",
+    img: "/daycare_photos/121.JPG",
+    title: "Our Toddler Classroom (12 – 24 months)",
+    description:
+      "Our toddler classroom is spacious, giving little ones plenty of room to move and explore. Daily activities support gross motor development, cognitive balance, classroom routines, and play-based exploration. We use the Experience Curriculum, enriched with music, movement, bilingual language immersion, literacy concepts, and emergent preschool skills.",
+    href: "/programs/toddler",
+  },
+  {
+    id: "early-preschool",
+    img: "/images/bba_pschool.jpg",
+    title: "Our Early Preschool Classroom (2 – 4 years)",
+    description:
+      "The preschool program at Bright Beams Academy is focused on preparing your child for kindergarten through emerging language, social, and self-care skills in a structured yet playful setting.",
+    href: "/programs/early-preschool",
+  },
+];
 
 export default function Gallery() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -31,9 +73,9 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-8">
         {/* Pagination dots */}
         <div className="flex gap-2 mb-6">
-          {programs.map((p, i) => (
+          {galleryItems.map((item, i) => (
             <span
-              key={p.slug}
+              key={item.id}
               className={`h-2 rounded-full transition-all ${
                 i === activeIdx ? "w-6 bg-[#ff7162]" : "w-2 bg-gray-300"
               }`}
@@ -70,31 +112,41 @@ export default function Gallery() {
           onScroll={handleScroll}
           className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-8 px-8 scroll-smooth scrollbar-hide"
         >
-          {programs.map((p) => (
-            <Link
-              key={p.slug}
-              href={`/programs/${p.slug}`}
-              className="snap-start shrink-0 w-[85%] md:w-[420px] group"
-            >
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-4">
-                <Image
-                  src={p.img}
-                  alt={`${p.name} classroom`}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 85vw, 420px"
-                />
+          {galleryItems.map((item) => {
+            const card = (
+              <>
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-4">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 85vw, 420px"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#ff7162] transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+              </>
+            );
+            return item.href ? (
+              <Link
+                key={item.id}
+                href={item.href}
+                className="snap-start shrink-0 w-[85%] md:w-[420px] group"
+              >
+                {card}
+              </Link>
+            ) : (
+              <div key={item.id} className="snap-start shrink-0 w-[85%] md:w-[420px] group">
+                {card}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#ff7162] transition-colors">
-                Our {p.name} Classroom ({p.age})
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {p.desc.split("\n\n")[0]}
-              </p>
-            </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
+
