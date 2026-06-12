@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#F4EDD0] shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-8 py-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <Image src="/logo.png" alt="Bright Beams Academy" width={307} height={96} className="h-20 w-auto" />
@@ -79,7 +79,7 @@ export default function Header() {
         rel="noopener noreferrer"
         className="block bg-[#ff7162] text-white text-sm md:text-base hover:opacity-90 transition-opacity"
       >
-        <div className="max-w-7xl mx-auto px-8 py-2 text-center">
+        <div className="max-w-5xl mx-auto px-8 py-2 text-center">
           🌟 Open House every Sunday 10am – 12pm for the Month of May
           <span className="ml-2 underline underline-offset-2">View details ↗</span>
         </div>
