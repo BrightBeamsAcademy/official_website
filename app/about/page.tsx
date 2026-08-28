@@ -10,10 +10,8 @@ const values = [
 ];
 
 const team = [
-  { name: "Ms. Jennifer Lin", role: "Founder & Director", bg: "bg-[#dceeff]" },
-  { name: "Ms. Amy Chen", role: "Lead Mandarin Teacher", bg: "bg-[#fde8e5]" },
-  { name: "Ms. Sarah Park", role: "Infant & Toddler Specialist", bg: "bg-[#dceeff]" },
-  { name: "Mr. David Wu", role: "Music & Arts Educator", bg: "bg-[#fde8e5]" },
+  { name: "Goddess Lourdess", role: "Center Director", bg: "bg-[#dceeff]" },
+  { name: "Maggie Lin", role: "Supervisor", bg: "bg-[#fde8e5]" },
 ];
 
 export default function AboutPage() {
@@ -92,7 +90,7 @@ export default function AboutPage() {
             <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Our Team</span>
             <h2 className="text-3xl font-bold mt-2 text-gray-800">Meet the Educators</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
             {team.map((t) => (
               <div key={t.name} className="text-center">
                 <div className={`${t.bg} w-32 h-32 rounded-full mx-auto mb-4`} />
