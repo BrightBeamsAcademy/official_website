@@ -80,7 +80,7 @@ export default function Header() {
         className="block bg-[#ff7162] text-white text-sm md:text-base hover:opacity-90 transition-opacity"
       >
         <div className="max-w-5xl mx-auto px-8 py-2 text-center">
-          🌟 Open House every Sunday 10am – 12pm for the Month of May
+          🌟 Open House every Sunday 10am – 12pm for the Month of September
           <span className="ml-2 underline underline-offset-2">View details ↗</span>
         </div>
       </a>

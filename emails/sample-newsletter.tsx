@@ -25,7 +25,7 @@ export default function SampleNewsletter({
 }) {
   return (
     <Newsletter
-      previewText="Open House every Sunday in May — plus a peek inside our classrooms."
+      previewText="Open House every Sunday in September — plus a peek inside our classrooms."
       siteUrl={siteUrl}
       unsubscribeUrl={unsubscribeUrl}
       recipientName={recipientName}
@@ -36,7 +36,7 @@ export default function SampleNewsletter({
       />
 
       <Intro>
-        It&apos;s a busy spring at Bright Beams Academy! Here&apos;s a quick look
+        It&apos;s a busy fall at Bright Beams Academy! Here&apos;s a quick look
         at what&apos;s happening this month, including our Open House series and
         a new peek inside the toddler room.
       </Intro>
@@ -55,7 +55,7 @@ export default function SampleNewsletter({
       />
 
       <EventBlock
-        date="Every Sunday in May"
+        date="Every Sunday in September"
         title="Open House"
         location="Bright Beams Academy, Redmond WA"
         description="Join us for a guided tour, meet our teachers, and see the classrooms in action. Drop in any Sunday between 10am – 12pm."
