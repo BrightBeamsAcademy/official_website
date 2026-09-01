@@ -58,7 +58,7 @@ export default function SampleNewsletter({
         date="Every Sunday in September"
         title="Open House"
         location="Bright Beams Academy, Redmond WA"
-        description="Join us for a guided tour, meet our teachers, and see the classrooms in action. Drop in any Sunday between 10am – 12pm."
+        description="Join us for a guided tour, meet our teachers, and see the classrooms in action. Drop in any Sunday between 11am – 12pm."
         cta={{
           label: "View flyer",
           href: `${siteUrl}/BBA%20Flyer%20-%20OPEN%20HOUSE.pdf`,
