@@ -84,6 +84,16 @@ export default function Header() {
           <span className="ml-2 underline underline-offset-2">View details ↗</span>
         </div>
       </a>
+      <a
+        href="/BBA%20Flyer%20-%20OPEN%20HOUSE.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block bg-[#ff7162] text-white text-sm md:text-base hover:opacity-90 transition-opacity"
+      >
+        <div className="max-w-5xl mx-auto px-8 py-2 text-center">
+          🌟 Checkout our winter holiday season discount
+        </div>
+      </a>
     </header>
   );
 }
