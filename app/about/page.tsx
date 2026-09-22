@@ -11,7 +11,7 @@ const values = [
 
 const team = [
   { name: "Goddess Lourdess", role: "Center Director", bg: "bg-[#dceeff]" },
-  { name: "Maggie Lin", role: "Supervisor", bg: "bg-[#fde8e5]" },
+  { name: "Maggie Lin", role: "Head of School", bg: "bg-[#fde8e5]" },
 ];
 
 export default function AboutPage() {
