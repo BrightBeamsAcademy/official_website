@@ -1,6 +1,6 @@
 export const CONTACT = {
-  phone: "253-632-4372",
-  phoneTel: "2536324372",
+  phone: "425-264-7895",
+  phoneTel: "4252647895",
   email: "info@brightbeams-academy.com",
   address: "8693 161st Ave NE, Redmond, WA 98052",
   mapsEmbed: "https://maps.google.com/maps?q=8693+161st+Ave+NE,+Redmond,+WA+98052&output=embed",
