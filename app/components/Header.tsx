@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CONTACT } from "../config";
@@ -13,8 +13,23 @@ const navLinks = [
   { label: "Admin", href: "/admin" },
 ];
 
+const getCurrentMonth = () =>
+  new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    timeZone: "America/Los_Angeles",
+  }).format(new Date());
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentMonth, setCurrentMonth] = useState<string | null>(null);
+
+  useEffect(() => {
+    const refreshCurrentMonth = () => setCurrentMonth(getCurrentMonth());
+    refreshCurrentMonth();
+
+    const intervalId = window.setInterval(refreshCurrentMonth, 60 * 60 * 1000);
+    return () => window.clearInterval(intervalId);
+  }, []);
 
   return (
     <header className="bg-[#F4EDD0] shadow-sm sticky top-0 z-50">
@@ -80,7 +95,7 @@ export default function Header() {
         className="block bg-[#ff7162] text-white text-sm md:text-base hover:opacity-90 transition-opacity"
       >
         <div className="max-w-5xl mx-auto px-8 py-2 text-center">
-          🌟 Open House every Sunday 11am – 12pm for the Month of September
+          🌟 Open House every Sunday 11am – 12pm for the Month of {currentMonth}
           <span className="ml-2 underline underline-offset-2">View details ↗</span>
         </div>
       </a>
