@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CONTACT } from "../config";
@@ -21,15 +21,7 @@ const getCurrentMonth = () =>
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentMonth, setCurrentMonth] = useState<string | null>(null);
-
-  useEffect(() => {
-    const refreshCurrentMonth = () => setCurrentMonth(getCurrentMonth());
-    refreshCurrentMonth();
-
-    const intervalId = window.setInterval(refreshCurrentMonth, 60 * 60 * 1000);
-    return () => window.clearInterval(intervalId);
-  }, []);
+  const currentMonth = getCurrentMonth();
 
   return (
     <header className="bg-[#F4EDD0] shadow-sm sticky top-0 z-50">
