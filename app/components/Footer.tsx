@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-300 pt-6 text-center text-sm text-gray-500">
-        Copyright © Bright Beams Academy 2024. All Rights Reserved
+        Copyright © Bright Beams Academy {new Date().getFullYear()}. All Rights Reserved
       </div>
     </footer>
   );

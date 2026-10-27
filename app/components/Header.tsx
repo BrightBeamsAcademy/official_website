@@ -10,7 +10,6 @@ const navLinks = [
   { label: "Programs", href: "/programs" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
-  { label: "Admin", href: "/admin" },
 ];
 
 const getCurrentMonth = () =>
@@ -28,7 +27,7 @@ export default function Header() {
       <div className="grid w-full grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center px-6 py-6 sm:px-8 lg:px-12 xl:px-16">
         {/* Logo */}
         <Link href="/" className="justify-self-start">
-          <Image src="/logo.png" alt="Bright Beams Academy" width={307} height={96} className="h-20 w-auto" />
+          <Image src="/logo.png" alt="Bright Beams Academy" width={307} height={96} priority className="h-20 w-auto" />
         </Link>
 
         {/* Desktop Nav */}

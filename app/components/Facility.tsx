@@ -6,13 +6,19 @@ export default function Facility() {
       <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
         {/* Left: photo */}
         <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
-          <Image src="/images/bba_facility.jpg" alt="Bright Beams Academy Facility" fill className="object-cover" />
+          <Image
+            src="/images/bba_facility.jpg"
+            alt="Bright Beams Academy Facility"
+            fill
+            sizes="(max-width: 768px) 100vw, 640px"
+            className="object-cover"
+          />
         </div>
 
         {/* Right: text */}
         <div>
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Facility</span>
-          <h1 className="text-3xl md:text-4xl font-bold mt-2 mb-5 text-gray-800">Great Facility for Kids</h1>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-5 text-gray-800">Great Facility for Kids</h2>
           <p className="text-gray-600 mb-4">
             Located in the heart of Downtown Redmond, our 4,600-square-foot facility offers a spacious,
             secure, and welcoming environment where your child can learn, play, and grow.

@@ -5,7 +5,7 @@ export default function CTA() {
     <section className="py-20 text-center bg-[#F4EDD0]">
       <div className="max-w-7xl mx-auto px-8">
         <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest block mb-2">Join Bright Beams</span>
-        <h1 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">Bright Beams is accepting new students!</h1>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">Bright Beams is accepting new students!</h2>
         <Link
           href="/contact"
           className="bg-[#4A90D9] text-white px-10 py-3 rounded-full font-bold hover:bg-[#2d6fa8] transition-colors text-lg"

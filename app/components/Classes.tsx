@@ -13,7 +13,7 @@ export default function Classes() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800">Education for Your Children</h1>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Education for Your Children</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {classes.map((c) => (
