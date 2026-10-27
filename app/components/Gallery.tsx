@@ -22,7 +22,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: "waddle",
-    img: "/daycare_photos/148.PNG",
+    img: "/daycare_photos/148.jpg",
     title: "Our Waddle Classroom (9 – 13 months)",
     description:
       "Our waddle classroom is warm and active, giving newly mobile little ones plenty of room to crawl, cruise, and take their first steps. Daily activities support gross motor development, early communication, social bonding, and curiosity-led exploration. We use the Experience Curriculum, enriched with music, movement, bilingual language immersion, picture books, and hands-on sensory play.",

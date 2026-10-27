@@ -1,12 +1,25 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { programs, getProgramBySlug } from "../data";
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return programs.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const program = getProgramBySlug(slug);
+  if (!program) return {};
+  return pageMetadata({
+    title: program.seoTitle,
+    description: program.seoDescription,
+    path: `/programs/${program.slug}`,
+  });
 }
 
 export default async function ProgramDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -27,7 +40,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         </div>
         <div className="relative max-w-6xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Programs</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-2 text-gray-800">{program.name}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mt-2 text-gray-800">{program.headline}</h1>
           <p className="text-gray-500 mt-2">{program.age}</p>
         </div>
       </section>

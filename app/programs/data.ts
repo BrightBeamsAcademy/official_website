@@ -2,6 +2,9 @@ export type Program = {
   slug: string;
   age: string;
   name: string;
+  headline: string;
+  seoTitle: string;
+  seoDescription: string;
   img: string;
   desc: string;
   details: { heading: string; body: string }[];
@@ -12,6 +15,10 @@ export const programs: Program[] = [
     slug: "infant",
     age: "6 weeks – 8 months",
     name: "Infant",
+    headline: "Infant Care Program",
+    seoTitle: "Infant Care Program (6 weeks – 8 months) in Redmond, WA | Bright Beams Academy",
+    seoDescription:
+      "Infant care for babies 6 weeks – 8 months at Bright Beams Academy in Redmond, WA. Mandarin–English bilingual daycare with sensory play, songs, and responsive caregiving.",
     img: "/images/bba_infant.jpg",
     desc: "English & Mandarin immersion setting and kindergarten readiness preparation through our play-based curriculum introduces world cultures & traditions through daily explorations.\n\nFrom 6 weeks to 8 months, infants undergo rapid development, especially in areas such as motor skills, language acquisition, emotional attachment, and cause-interaction. This period is crucial for the development of the brain's sensory abilities, and socialization skills. With appropriate stimulation and interaction from parents or caregivers, infants can fully realize their potential during this critical phase.",
     details: [
@@ -33,6 +40,10 @@ export const programs: Program[] = [
     slug: "waddle",
     age: "9 months – 13 months",
     name: "Waddle",
+    headline: "Waddle Care Program",
+    seoTitle: "Waddle Care Program (9 months – 13 months) in Redmond, WA | Bright Beams Academy",
+    seoDescription:
+      "Waddle child care for babies 9 months – 13 months at Bright Beams Academy in Redmond, WA. Mandarin–English daycare with movement, music, and play-based learning.",
     img: "/images/bba_waddler.jpg",
     desc: "English & Mandarin immersion setting and kindergarten readiness preparation through our play-based curriculum introduces world cultures & traditions through daily explorations.\n\nFrom 9 months to 13 months, toddlers become increasingly independent yet curious about their environments. They become more mobile, begin to express themselves verbally, and engage in more complex interactions with their environment and caregivers. It is a crucial time for fostering key developmental skills.",
     details: [
@@ -54,6 +65,10 @@ export const programs: Program[] = [
     slug: "toddler",
     age: "12 – 24 months",
     name: "Toddler",
+    headline: "Toddler Care Program",
+    seoTitle: "Toddler Care Program (12 – 24 months) in Redmond, WA | Bright Beams Academy",
+    seoDescription:
+      "Toddler care for children 12 – 24 months at Bright Beams Academy in Redmond, WA. Bilingual Mandarin–English daycare with language-rich play, art, and social learning.",
     img: "/images/bba_toddler.jpg",
     desc: "The preschool program at Bright Beams Academy School offers a variety of learning opportunities focused on preparing your child for preschool.\n\nThe period between 12 to 24 months is marked by significant growth in both physical and cognitive development. During this time, toddlers become more mobile, begin to express themselves verbally, and engage in more complex interactions with their environment and caregivers. It is a crucial time for fostering key developmental skills, cognitive growth, social development, and early learning experiences.",
     details: [
@@ -75,6 +90,10 @@ export const programs: Program[] = [
     slug: "early-preschool",
     age: "2 – 4 Years",
     name: "Early Preschool",
+    headline: "Early Preschool Program",
+    seoTitle: "Early Preschool Program (2 – 4 Years) in Redmond, WA | Bright Beams Academy",
+    seoDescription:
+      "Early preschool for children ages 2 – 4 years at Bright Beams Academy in Redmond, WA. Mandarin–English bilingual preschool with language, social skills, and kindergarten readiness.",
     img: "/images/bba_pschool.jpg",
     desc: "The preschool program at Bright Beams Academy is focused on preparing your child for kindergarten.\n\nThe age of 2 years is a pivotal time in a child's development. At this stage, children are becoming increasingly independent, more curious about their environment, and developing more language and social skills. Early school education for 2-year-olds focuses on building emerging abilities and helping children grow in a structured yet playful setting. This is a period when children begin to make more meaningful connections with the world around them.",
     details: [

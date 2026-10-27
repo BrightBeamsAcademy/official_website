@@ -1,20 +1,30 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
+import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
 
+// Latin files only. next/font/google pulls the full CJK face for this family
+// (hundreds of preloads), which is larger than the render-blocking stylesheet it replaces.
+const mPlusRounded = localFont({
+  src: [
+    { path: "./fonts/m-plus-rounded-1c-latin-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/m-plus-rounded-1c-latin-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/m-plus-rounded-1c-latin-700.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/m-plus-rounded-1c-latin-800.woff2", weight: "800", style: "normal" },
+  ],
+  display: "swap",
+  variable: "--font-mplus",
+  adjustFontFallback: false,
+});
+
 export const metadata: Metadata = {
-  title: "Bright Beams Academy",
-  description: "Bright Beams Academy is a premier bilingual kindergarten located in Redmond, Washington, dedicated to nurturing the growth and development of children aged 0 to 5 years.",
+  metadataBase: new URL(SITE_URL),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="en" className={mPlusRounded.variable}>
       <body>
         {children}
         <Analytics />

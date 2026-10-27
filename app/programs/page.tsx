@@ -2,6 +2,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { pageMetadata, programsSeo } from "@/lib/seo";
+
+export const metadata = pageMetadata(programsSeo);
 
 const programs = [
   {

@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-8 py-20 md:w-1/2">
         <h3 className="text-[#ff7162] font-semibold uppercase tracking-widest mb-3">Best Choice</h3>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-5">
-          Make Your Children&apos;s<br />Life Special
+          Make Your Children&apos;s <br />Life Special
         </h1>
         <p className="text-gray-600 mb-8 max-w-lg">
           Our school uniquely focuses on developing children&apos;s abilities to prepare them for life.

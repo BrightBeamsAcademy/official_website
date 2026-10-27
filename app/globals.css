@@ -13,7 +13,7 @@
 * { box-sizing: border-box; }
 
 body {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: var(--font-mplus), sans-serif;
   color: #333;
   line-height: 1.7;
   background: #F4EDD0;

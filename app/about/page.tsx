@@ -1,6 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import { aboutSeo, pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata(aboutSeo);
 
 const values = [
   { title: "Bilingual Education", desc: "Immersive Chinese and English curriculum that builds linguistic agility and cultural appreciation from the earliest age." },
