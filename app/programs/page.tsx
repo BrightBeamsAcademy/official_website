@@ -10,17 +10,19 @@ const programs = [
   {
     age: "6 weeks – 8 months",
     name: "Infant Program",
-    desc: "A gentle, nurturing environment designed for the youngest learners. Caregivers build secure attachments through responsive care, sensory play, and soft introduction to both English and Mandarin through songs and stories.",
+    desc: "Infant care in a gentle, nurturing room for the youngest learners. Caregivers build secure attachments through responsive care, sensory play, and soft introduction to both English and Mandarin through songs and stories.",
     highlights: ["1:3 caregiver-to-infant ratio", "Sensory exploration stations", "Daily Mandarin songs & stories", "Parent daily reports"],
     img: "/images/bba_infant.jpg",
+    alt: "Infant care classroom",
     price: "Contact for pricing",
   },
   {
     age: "9 months – 13 months",
     name: "Waddle Program",
-    desc: "As babies begin to discover their mobility, our Waddle program supports every crawl and first step. Play-based activities introduce world cultures through music, movement, and tactile exploration.",
+    desc: "Young toddler care for babies finding their mobility. The Waddle program supports every crawl and first step through music, movement, and tactile play.",
     highlights: ["Low-to-the-ground safe environment", "Gross motor skill development", "Bilingual storytime daily", "Music & movement sessions"],
     img: "/images/bba_waddler.jpg",
+    alt: "Young toddler daycare classroom",
     price: "Contact for pricing",
   },
   {
@@ -29,6 +31,7 @@ const programs = [
     desc: "Our toddler curriculum is packed with variety — art, sensory bins, outdoor play, and language-rich activities — all carefully designed to build independence and prepare children for preschool.",
     highlights: ["Language-rich classroom", "Art & sensory activities daily", "Outdoor exploration time", "Social-emotional skill building"],
     img: "/images/bba_toddler.jpg",
+    alt: "Toddler daycare classroom",
     price: "Contact for pricing",
   },
   {
@@ -37,6 +40,7 @@ const programs = [
     desc: "An engaging curriculum for young children that develops rhythm, pitch awareness, creativity, and expression. Children explore instruments, movement, and collaborative musical play.",
     highlights: ["Orff-inspired methodology", "Instruments for every child", "Performance opportunities"],
     img: "/images/bba_pschool.jpg",
+    alt: "Preschool classroom",
     price: "Contact for pricing",
   },
 ];
@@ -53,10 +57,10 @@ export default function ProgramsPage() {
       </div>
         <div className="max-w-7xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Programs</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Education for Your Children</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Child Care Programs in Redmond</h1>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            From infancy through pre-kindergarten, every Bright Beams program blends bilingual immersion
-            with play-based learning to build confident, curious children.
+            From infancy through preschool, our child care programs in Redmond blend Mandarin–English
+            immersion with play-based learning for infants, young toddlers, toddlers, and preschoolers.
           </p>
         </div>
       </section>
@@ -70,7 +74,7 @@ export default function ProgramsPage() {
               className={`grid md:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""}`}
             >
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
-                <Image src={p.img} alt={p.name} fill className="object-cover" />
+                <Image src={p.img} alt={p.alt} fill className="object-cover" />
               </div>
               <div>
                 <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">{p.age}</span>

@@ -8,7 +8,7 @@ export default function Facility() {
         <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
           <Image
             src="/images/bba_facility.jpg"
-            alt="Bright Beams Academy Facility"
+            alt="Bright Beams Academy daycare facility in Redmond"
             fill
             sizes="(max-width: 768px) 100vw, 640px"
             className="object-cover"

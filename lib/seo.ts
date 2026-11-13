@@ -43,36 +43,36 @@ export function pageMetadata({ title, description, path }: PageSeo): Metadata {
 }
 
 export const homeSeo = {
-  title: "Bilingual Mandarin–English Daycare & Preschool in Redmond, WA | Bright Beams Academy",
+  title: "Bilingual Daycare & Preschool in Redmond, WA | Bright Beams Academy",
   description:
-    "Bright Beams Academy is a Mandarin–English bilingual daycare and preschool in Redmond, WA. Infant care, toddler programs, and early preschool for families in Redmond, Bellevue, Kirkland, and Sammamish.",
+    "Mandarin–English bilingual daycare and childcare center in Redmond, WA. Infant, toddler, and preschool care for families in Redmond, Bellevue, Kirkland, and Sammamish.",
   path: "/",
 } as const;
 
 export const aboutSeo = {
-  title: "About Us | Bilingual Daycare & Preschool in Redmond | Bright Beams Academy",
+  title: "Bilingual Early Learning Center in Redmond | Bright Beams Academy",
   description:
-    "Learn about Bright Beams Academy, a Mandarin–English bilingual daycare and preschool in Redmond, Washington, serving families in Redmond, Bellevue, and Kirkland.",
+    "The story of Bright Beams Academy, a Mandarin–English bilingual early learning center and childcare center in Redmond, WA, for children aged 0 to 5.",
   path: "/about",
 } as const;
 
 export const programsSeo = {
   title: "Child Care Programs in Redmond, WA | Bright Beams Academy",
   description:
-    "Daycare and preschool programs in Redmond, WA: Infant (6 weeks – 8 months), Waddle (9 months – 13 months), Toddler (12 – 24 months), and Early Preschool (2 – 4 years) with Mandarin–English immersion.",
+    "Child care programs in Redmond for infants through preschool: Infant (6 weeks – 8 months), Waddle (9 months – 13 months), Toddler (12 – 24 months), and Early Preschool (2 – 4 years), in Mandarin and English.",
   path: "/programs",
 } as const;
 
 export const blogSeo = {
-  title: "Blog | Bilingual Daycare & Preschool Tips | Bright Beams Academy",
+  title: "Early Learning Blog | Bright Beams Academy",
   description:
-    "Parenting articles and classroom news from Bright Beams Academy, a Mandarin–English bilingual daycare and preschool in Redmond, WA.",
+    "Notes on bilingual early learning, child development, and family life from Bright Beams Academy in Redmond, WA.",
   path: "/blog",
 } as const;
 
 export const contactSeo = {
   title: "Tour & Enroll – Bright Beams Academy, Redmond WA",
-  description: `Schedule a tour or ask about enrollment at Bright Beams Academy, ${CONTACT.address}. Call ${CONTACT.phone}. ${CONTACT.hours}.`,
+  description: `Schedule a tour or ask about enrollment at Bright Beams Academy in Redmond, WA. ${CONTACT.address}. Call ${CONTACT.phone}. ${CONTACT.hours}.`,
   path: "/contact",
 } as const;
 
@@ -99,6 +99,8 @@ export function homeJsonLd() {
     "@context": "https://schema.org",
     "@type": ["ChildCare", "Preschool"],
     name: SITE_NAME,
+    description:
+      "Mandarin–English bilingual daycare and childcare center in Redmond, WA, with preschool for infants through early preschool.",
     url: SITE_URL,
     image: `${SITE_URL}${OG_IMAGE.url}`,
     telephone: CONTACT.phone,

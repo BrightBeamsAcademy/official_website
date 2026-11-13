@@ -60,7 +60,7 @@ export default function ContactPage() {
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Contact</span>
           <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Get in Touch</h1>
           <p className="text-gray-600 max-w-xl mx-auto text-lg">
-            We'd love to meet your family. Reach out to schedule a tour, ask about enrollment, or just say hello.
+            We'd love to meet your family. Reach out to schedule a tour of our Redmond daycare, ask about enrollment, or just say hello.
           </p>
         </div>
       </section>

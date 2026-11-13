@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <h4 className="text-gray-800 font-bold text-lg mb-4">Bright Beams Academy</h4>
           <p className="text-sm leading-relaxed mb-4">
-            Bright Beams Academy is a premier bilingual kindergarten located in Redmond, Washington,
+            Bright Beams Academy is a Mandarin–English bilingual daycare and preschool in Redmond, Washington,
             dedicated to nurturing the growth and development of children aged 0 to 5 years.
           </p>
           <div className="flex gap-3">

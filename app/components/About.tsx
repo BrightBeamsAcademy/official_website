@@ -8,7 +8,7 @@ export default function About() {
         <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
           <Image
             src="/images/bba_welcome.jpg"
-            alt="Welcome to Bright Beams Academy"
+            alt="Children learning in a bilingual daycare classroom in Redmond"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 640px"
@@ -19,7 +19,7 @@ export default function About() {
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">About Us</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-5 text-gray-800">Welcome to Bright Beams Academy</h2>
           <p className="text-gray-600 mb-4">
-            Bright Beams Academy is a premier bilingual kindergarten located in Redmond, Washington,
+            Bright Beams Academy offers Mandarin–English early learning in Redmond, Washington,
             dedicated to nurturing the growth and development of children aged 0 to 5 years. In a
             region characterized by the increasing number of dual-income families in Redmond, Bellevue,
             and Kirkland, the need for high-quality early education is more essential than ever.

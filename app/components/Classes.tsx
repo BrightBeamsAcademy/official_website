@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const classes = [
-  { age: "6 weeks to 8 months", name: "Infant", desc: "English & Mandarin Immersion; play-based curriculum introducing world cultures & traditions through daily explorations.", img: "/images/bba_infant.jpg", href: "/programs/infant" },
-  { age: "9 months to 13 months", name: "Waddle", desc: "English & Mandarin Immersion; play-based curriculum introducing world cultures & traditions through daily explorations.", img: "/images/bba_waddler.jpg", href: "/programs/waddle" },
-  { age: "12 to 24 months", name: "Toddler", desc: "Variety of learning activities focused on preparing your child for preschool.", img: "/images/bba_toddler.jpg", href: "/programs/toddler" },
-  { age: "2–4 Years · 12 Seats", name: "Early Preschool", desc: "Engaging music curriculum designed to develop rhythm, creativity, and expression in young learners.", img: "/images/bba_pschool.jpg", href: "/programs/early-preschool" },
+  { age: "6 weeks to 8 months", name: "Infant", desc: "English & Mandarin Immersion; play-based curriculum introducing world cultures & traditions through daily explorations.", img: "/images/bba_infant.jpg", href: "/programs/infant", alt: "Infant care classroom" },
+  { age: "9 months to 13 months", name: "Waddle", desc: "English & Mandarin Immersion; play-based curriculum introducing world cultures & traditions through daily explorations.", img: "/images/bba_waddler.jpg", href: "/programs/waddle", alt: "Young toddler daycare classroom" },
+  { age: "12 to 24 months", name: "Toddler", desc: "Variety of learning activities focused on preparing your child for preschool.", img: "/images/bba_toddler.jpg", href: "/programs/toddler", alt: "Toddler daycare classroom" },
+  { age: "2–4 Years · 12 Seats", name: "Early Preschool", desc: "Engaging music curriculum designed to develop rhythm, creativity, and expression in young learners.", img: "/images/bba_pschool.jpg", href: "/programs/early-preschool", alt: "Preschool classroom" },
 ];
 
 export default function Classes() {
@@ -19,7 +19,7 @@ export default function Classes() {
           {classes.map((c) => (
             <div key={c.name} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
               <div className="relative h-48">
-                <Image src={c.img} alt={c.name} fill className="object-cover" />
+                <Image src={c.img} alt={c.alt} fill className="object-cover" />
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <div className="text-xs text-[#ff7162] font-semibold uppercase tracking-wide mb-1">{c.age}</div>

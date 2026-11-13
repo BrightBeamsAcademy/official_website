@@ -29,9 +29,9 @@ export default function AboutPage() {
       </div>
         <div className="max-w-7xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">About Us</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-8 text-gray-800">Our Story & Mission</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-8 text-gray-800">Our Bilingual Early Learning Center</h1>
           <div className="text-gray-600 text-lg space-y-5 text-left">
-            <p>Bright Beams Academy is a premier bilingual kindergarten located in Redmond, Washington, dedicated to nurturing the growth and development of children aged 0 to 5 years. In a region characterized by the increasing number of dual-income families in Redmond, Bellevue, and Kirkland, the need for high-quality early education is more essential than ever. Bright Beams Academy offers an immersive learning environment that combines bilingual education, creative activities, and early cognitive development to give children the strongest possible start to their educational journey.</p>
+            <p>Bright Beams Academy is a Mandarin–English bilingual early learning center in Redmond, WA. This childcare center is dedicated to nurturing the growth and development of children aged 0 to 5 years. In a region characterized by the increasing number of dual-income families in Redmond, Bellevue, and Kirkland, the need for high-quality early education is more essential than ever. Bright Beams Academy offers an immersive learning environment that combines bilingual education, creative activities, and early cognitive development to give children the strongest possible start to their educational journey.</p>
             <p>Our curriculum integrates both Chinese and English, allowing children to develop linguistic abilities at a young age while fostering cognitive flexibility and cultural appreciation. At Bright Beams, education goes beyond academics, focusing on emotional well-being, creative thinking, and social skills. We aim to create a joyful and enriching environment where children not only learn but thrive holistically.</p>
             <p>Designed with both children and parents in mind, Bright Beams Academy operates with flexibility, offering weekend and after-school programs to support the diverse needs of working families. Through personalized learning in small class sizes, experienced educators, and a safe, engaging environment, we ensure every child receives the attention, care, and inspiration they need to succeed.</p>
           </div>
@@ -42,7 +42,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
-            <img src="/images/bba_welcome.jpg" alt="Welcome to Bright Beams Academy" className="w-full h-full object-cover" />
+            <img src="/images/bba_welcome.jpg" alt="Bilingual early learning at Bright Beams Academy" className="w-full h-full object-cover" />
           </div>
           <div>
             <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Who We Are</span>
@@ -58,7 +58,7 @@ export default function AboutPage() {
               cultural appreciation.
             </p>
             <p className="text-gray-600">
-              From infants to pre-kindergarteners, every program is thoughtfully designed to meet
+              From infants through early preschool, every program is thoughtfully designed to meet
               developmental milestones while celebrating each child's unique personality.
             </p>
           </div>

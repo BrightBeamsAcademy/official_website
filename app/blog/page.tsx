@@ -70,9 +70,9 @@ export default function BlogPage() {
       </div>
         <div className="max-w-7xl mx-auto px-8 text-center">
           <span className="text-[#ff7162] text-sm font-semibold uppercase tracking-widest">Blog</span>
-          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">News & Insights</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6 text-gray-800">Early Learning Insights</h1>
           <p className="text-gray-600 max-w-xl mx-auto text-lg">
-            Tips for families, updates from the classroom, and research on early childhood education.
+            Tips for families, classroom updates, and notes on bilingual early learning.
           </p>
         </div>
       </section>

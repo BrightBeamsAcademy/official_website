@@ -50,7 +50,7 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-start">
           {/* Image */}
           <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-sm">
-            <Image src={program.img} alt={program.name} fill className="object-cover" />
+            <Image src={program.img} alt={`${program.headline} at Bright Beams Academy`} fill className="object-cover" />
           </div>
 
           {/* Description */}
